@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 16px;
+    background-color: white;
+}
+h2, p{
+    font-size: 14px;
+}
+/*header*/
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 10vh;
+    background-color: black;
+    padding: 10px;
+}
+.nav a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+.nav a [href= "#"]{
+    background-color: red;
+}
+.nav a:hover{
+    background-color: red;
+    border-radius: 50px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*Main*/
+.main{
+    width: 100%;
+    min-height: 75vh;
+    text-align: center;
+    background-image: url(./assets/images/image-1.jpg);
+    object-fit: cover;
+    
+}
+.banner_main{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+.section_city{
+    padding: 10px;
+}
+.city{
+    width: 50%;
+    height: 110px;
+    object-fit: cover;
+    padding: 10px 5px;
+}
+.section_price{
+    padding: 10px;
+}
+caption{
+    background-color: black;
+    margin-top: 10px;
+}
+.list{
+    background-color: black;
+    padding: 25px;
+    border-radius: 40px;
+}
+.list li{
+    color: white;
+}
+.table{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+table, tr, th, td{
+    padding: 5px;
+    color: white;
+    border: 1.5px solid white;
+}
+/*Footer*/
+.footer{
+    width: 100%;
+    min-height: 15vh;
+    background-color: black;
+}
+
+.name_footer{
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 15px;
+}
+.mail{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    h1,h2{
+        font-size: 18px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .nav{
+        padding: 20px;
+    }
+    .nav a{
+        font-size: 16px;
+    }
+ /*main*/   
+    .section_price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner_main{
+        width: 100%;
+        height: 250px;
+    }
+    .city{
+        width: 25%;
+        height: 150px;
+    }
+    .text_city{
+        font-size: 16px;
+    }
+    .list{
+        padding: 5ch;
+        text-align: start;
+    }
+    table, tr, th, td{
+        padding: 10px;
+    }
+}
